@@ -10,7 +10,42 @@ export default function RootLayout({
 }) {
   return (
     <html lang="en">
-      <body>{children}</body>
+      <body>
+        
+        <header style={{
+          border:"1px solid black",
+          padding:"10px",
+          paddingLeft:"2rem",
+          textAlign:"center"
+        }}>
+          <h1>Header</h1>
+        </header>
+        
+
+        <div style={{
+          marginBottom:"10vh"
+        }}>
+          {children}
+        </div>
+
+        <footer style={{
+          position:"fixed",
+          bottom:"0",
+          left:"0",
+          width:"100%",
+          minHeight:"5vh",
+          textAlign:"center",
+          fontFamily:"sans-serif",
+          fontWeight:"100",
+          border:"1px solid black"
+        }}>
+
+          <h3>Brought to you by Tirthraj Mahajan @2024</h3>
+
+        </footer>
+
+
+        </body>
     </html>
   )
 }
