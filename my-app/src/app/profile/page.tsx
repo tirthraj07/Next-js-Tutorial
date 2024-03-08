@@ -1,12 +1,8 @@
-import { Metadata } from "next";
-
-export const metadata: Metadata = {
-    title: "Profile"
-}
+"use client"
 
 export default function Profile(){
 
-    const err = true;
+    const err = false;
 
     if(err === true){
         throw new Error('Error Occurred. Contact Server Administrator')
