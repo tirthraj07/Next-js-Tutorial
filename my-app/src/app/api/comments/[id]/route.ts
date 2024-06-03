@@ -1,4 +1,3 @@
-import { comment } from "postcss";
 import { comments } from "../comments";
 export async function GET(request:Request, { params }:{
     params:{
