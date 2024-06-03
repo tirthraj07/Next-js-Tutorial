@@ -1,4 +1,5 @@
 import { comments } from "../comments";
+import { redirect } from "next/navigation";
 export async function GET(request:Request, { params }:{
     params:{
         id:string
@@ -15,13 +16,7 @@ export async function GET(request:Request, { params }:{
             })
         }
     }
-
-    return new Response(JSON.stringify({error:"Comment not found"}), {
-        headers: {
-            "Content-Type": "application/json"
-        },
-        status: 404
-    });
+    redirect('/api/comments')
 }
 
 
